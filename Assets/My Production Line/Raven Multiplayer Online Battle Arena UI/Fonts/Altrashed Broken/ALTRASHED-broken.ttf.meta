@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: fdf53827076fd814ea23d669dcd82d65
+timeCreated: 1557239168
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: ALTRASHED-rough
+  fontNames:
+  - ALTRASHED-rough
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
