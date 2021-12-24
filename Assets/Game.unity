@@ -7403,7 +7403,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 50
+  field of view: 42
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -10064,7 +10064,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -480836870
+  randomSeed: 357568713
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -13563,12 +13563,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1777463562}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1600, y: 807.79224}
+  m_SizeDelta: {x: 1600, y: 871.6007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1189756810
 MonoBehaviour:
@@ -19582,8 +19582,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1189756809}
   - {fileID: 1974940925}
+  - {fileID: 1189756809}
   m_Father: {fileID: 1214547002}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20106,7 +20106,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -358060052
+  randomSeed: -232906752
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -24363,7 +24363,7 @@ RectTransform:
   m_LocalScale: {x: 2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1777463562}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
