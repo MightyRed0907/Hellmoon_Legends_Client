@@ -294,14 +294,16 @@ public class AgentInput : MonoBehaviour
     {
         if (myAgent.nextMoveRequest < Time.time)
         {
-            myAgent.StartMove(pos);
+            Vector3 dest = myAgent.GetMoveDestination(pos);
+
+            myAgent.StartMove(dest);
             MObjects.MoveRequest mObject = new MObjects.MoveRequest();
-            mObject.value = pos;
+            mObject.value = dest;
             GameManager.nc.Send(MTypes.MoveRequest, mObject);
             myAgent.nextMoveRequest = Time.time + 0.06f;
 
             if (simulate)
-                myAgent.StartMove(pos);
+                myAgent.StartMove(dest);
         }
     }
 }

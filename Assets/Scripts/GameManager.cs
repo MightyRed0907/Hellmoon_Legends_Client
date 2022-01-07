@@ -201,6 +201,8 @@ public class GameManager : MonoBehaviour
 
         heroes = Resources.LoadAll<Transform>("Heroes").ToList();
         heroes.AddRange(Resources.LoadAll<Transform>("Creatures"));
+        heroes.AddRange(Resources.LoadAll<Transform>("Towers"));
+
         skills = Resources.LoadAll<Transform>("Skills").ToList();
         skillEffect = Resources.LoadAll<Transform>("SkillEffects").ToList();
         buffs = Resources.LoadAll<Transform>("Buffs").ToList();

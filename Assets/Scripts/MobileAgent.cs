@@ -259,10 +259,12 @@ public class MobileAgent : MonoBehaviour
 
     public void StartMove(Vector3 v)
     {
+        /*
         if (isController && MapLoader.isBlocked(GameManager.currentMapId, transform.position, v, false))
         {
             v = MapLoader.latestPoint(GameManager.currentMapId, transform.position, v);
         }
+        */
 
         if (GameManager.GetDistance(transform.position, v) < 0.5f)
         {
@@ -284,5 +286,17 @@ public class MobileAgent : MonoBehaviour
             GameManager.singleton.clickEffect.transform.position = v + Vector3.up * 0.25f;
             GameManager.singleton.clickEffect.Play();
         }
+    }
+
+    public Vector3 GetMoveDestination(Vector3 v)
+    {
+        Vector3 dest = v;
+
+        if (isController && MapLoader.isBlocked(GameManager.currentMapId, transform.position, v, false))
+        {
+            dest = MapLoader.latestPoint(GameManager.currentMapId, transform.position, v);
+        }
+
+        return dest;
     }
 }
