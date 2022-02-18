@@ -398,7 +398,7 @@ public class GameManager : MonoBehaviour
 
         sb.Append(sessionUpdate.seconds + " </size>");
 
-        panel_Counter.Open();
+        //panel_Counter.Open();
         panel_Counter.GetComponentInChildren<Text>().text = sb.ToString();
 
         if (currentMap != sessionUpdate.mapId)
@@ -703,7 +703,8 @@ public class GameManager : MonoBehaviour
         /*
          * AGENT UI
          * */
-        ma.panel = Instantiate((ma.isCreature) ? creatureCanvas : agentCanvas, canvas);
+        //ma.panel = Instantiate((ma.isCreature) ? creatureCanvas : agentCanvas, canvas);
+        ma.panel = Instantiate(agentCanvas, canvas);
         ma.panel.SetSiblingIndex(0); // always behind from the main ui
 
         Color tColor = (ma.isCreature) ? creatureColor : teamColors[mObject.team];
